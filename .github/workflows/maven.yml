@@ -8,6 +8,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Create Package
+      uses: benjefferies/create-bintray-package@master
+      with:
+        bintray-user: benjefferies
+        bintray-token: ${{ secrets.BINTRAY_ACCESS_TOKEN }}
+        owner: benjefferies
+        repo: openbanking4.dev
+        package-name: maven-bintray-github-actions
+        package-description: Example
+        package-url: https://github.com/benjefferies/maven-bintray-github-actions
+        package-license: MIT
     - name: Release
       uses: qcastel/github-actions-maven-release@master
       with:
