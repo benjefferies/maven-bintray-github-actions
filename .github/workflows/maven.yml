@@ -15,7 +15,7 @@ jobs:
         bintray-token: ${{ secrets.BINTRAY_ACCESS_TOKEN }}
         owner: benjefferies
         repo: openbanking4.dev
-        package-name: maven-bintray-github-actions
+        package-name: uk.echosoft.maven-bintray-github-actions
         package-description: Example
         package-url: https://github.com/benjefferies/maven-bintray-github-actions
         package-license: MIT
