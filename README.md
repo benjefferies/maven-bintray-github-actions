@@ -15,7 +15,7 @@ An example of how to publish an artifact to bintray using github actions.
       package-url: https://github.com/benjefferies/maven-bintray-github-actions
       package-license: MIT
   ```
-1. Then we will publish the artifact using https://github.com/qcastel/github-actions-maven-release
+2. Then we will publish the artifact using https://github.com/qcastel/github-actions-maven-release
   ```
     - name: Release
     uses: qcastel/github-actions-maven-release@master
