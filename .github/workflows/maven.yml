@@ -11,7 +11,7 @@ jobs:
       with:
         bintray-user: benjefferies
         bintray-token: ${{ secrets.BINTRAY_ACCESS_TOKEN }}
-        owner: openbanking4.dev
+        owner: openbanking4-dev
         repo: openbanking4.dev
         package-name: maven-bintray-github-actions
         package-description: Example
