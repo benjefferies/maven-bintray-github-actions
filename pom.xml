@@ -17,7 +17,7 @@
       <repository>
          <id>bintray-benjefferies-openbanking4.dev</id>
          <name>bintray</name>
-         <url>https://api.bintray.com/maven/benjefferies/openbanking4.dev/maven-bintray-github-actions/;publish=1</url>
+         <url>https://openbanking4-dev.bintray.com/openbanking4.dev/;publish=1</url>
       </repository>
    </distributionManagement>
    <licenses>
