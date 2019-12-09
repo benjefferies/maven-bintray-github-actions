@@ -7,7 +7,7 @@ An example of how to publish an artifact to bintray using github actions.
     uses: benjefferies/create-bintray-package@master
     with:
       bintray-user: benjefferies
-      bintray-token: ${{ secrets.BINTRAY_ACCESS_TOKEN }}
+      bintray-token: ${{ secrets.BINTRAY_API_KEY }}
       owner: benjefferies
       repo: openbanking4.dev
       package-name: maven-bintray-github-actions
@@ -25,8 +25,8 @@ An example of how to publish an artifact to bintray using github actions.
       gpg-key-id: ${{ secrets.GITHUB_GPG_KEY_ID }}
       gpg-key: ${{ secrets.GITHUB_GPG_KEY }}
       maven-repo-server-id: bintray-benjefferies-openbanking4.dev
-      maven-repo-server-username: ${{ secrets.PRIVATE_REPO_USER }}
-      maven-repo-server-password: ${{ secrets.PRIVATE_REPO_PASSWORD }}
+      maven-repo-server-username: benjefferies
+      maven-repo-server-password: ${{ secrets.BINTRAY_API_KEY }}
       maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip"
       git-release-bot-name: "bot"
       git-release-bot-email: "bot@echosoft.uk"
